@@ -1,0 +1,130 @@
+/* Copyright 2014 SMC Media Group */
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background:#fff;
+    min-width:600px;        /* Minimum width of layout - remove line if not required */
+                    /* The min-width property does not work in old versions of Internet Explorer */
+    font-size:90%;
+}
+a {
+    color:#369;
+}
+a:hover {
+    color:#fff;
+    background:#369;
+    text-decoration:none;
+}
+p {
+    margin:.4em 0 .8em 0;
+    padding:0;
+}
+img {
+    margin:10px 0 5px;
+}
+#header {
+    width:1247px;
+    padding:0;
+    margin:0 auto;
+    /*border-bottom:1px solid #000;*/
+}
+#header p {
+    text-align: left;
+    padding:5px 0 5px 990px;
+    margin:0;
+    font-size: 12px;
+}
+#header h1  {
+    padding:.2em 15px;
+    margin:0;
+}
+#header h2  {
+    padding:.2em 15px    .7em 15px;
+    margin:0;
+}
+#colmask {
+    position:relative;    /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+    clear:both;
+    width:1247px;            /* width of whole page */
+    overflow:hidden;        /* This chops off any overhanging divs */
+    background: transparent;        /* Left column background colour */
+    margin: 0 auto;
+}
+#colmid {
+    float:left;
+    width:200%;
+    position:relative;
+    left:300px;
+    background:#FAF5F9;        /* Centre column background colour */
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+#colright {
+    float:left;
+    width:100%;
+    position:relative;
+    left:50%;
+    margin-left:-600px;
+    background:#ffffff;        /* Right column background colour */
+}
+#col1wrap {
+    float:right;
+    width:50%;
+    position:relative;
+    right:100%;
+}
+#col1pad {
+    margin:0 10px 0 600px;
+    padding-right: 10px;
+    overflow:hidden;
+}
+#col1 {
+    width:100%;
+    overflow:hidden;
+    padding: 10px;
+}
+#col2 {
+    float:left;
+    width:310px;
+    position:relative;
+    margin-left:-50%;
+    left:300px;
+    overflow:hidden;
+}
+#col3 {
+    float:left;    
+    margin-left: 10px;        
+    width:310px;
+    position:relative;
+    overflow:hidden;
+}
+#footer {
+    clear:both;
+    width:1247px;
+    padding:0;
+    margin:0 auto;
+    text-align:center;
+    color: #fff !important;
+}
+#footer p {
+    padding:.5em 15px;
+    font-size: 11px;
+    color: #fff !important;
+}
+
+#footer p a {
+    color: #fff;
+}
+
+#footer-bg {
+    position: relative;
+    display: block;
+    height: 250px;
+    width: 1280px;
+    bottom: -97px;
+    background: URL('/assets/img/footer.png') no-repeat top;
+    z-index: -1;
+    margin: 0 auto;
+    margin-top: -100px;
+}

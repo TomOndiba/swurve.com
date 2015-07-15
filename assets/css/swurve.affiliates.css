@@ -1,0 +1,239 @@
+/* Copyright 2014 SMC Media Group */
+#container {
+    background-color: #FAF5F9;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.side-module {
+}
+
+.side-module h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#presentation {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 750px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #95999C;
+}
+
+#presentation span {
+    display: block;
+    margin-top: 85px;
+    font-size: 40px;
+    font-family: 'arial black';
+    color: #ddd;
+}
+
+.left-promo {
+    float: left;
+    width: 46%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.right-promo {
+    float: right;
+    width: 46%;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#menu-options li a {
+    text-decoration: none;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: #95999C;
+}
+
+#overview {
+    background-color: #F2F5F8;
+    border: 2px solid #95999C;
+}
+
+#affiliate-info li {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#programs-offered li {
+    float: left;
+    width: 290px;
+    border-top: 2px solid #95999C;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.alert {
+    border: 1px solid #95999C;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    background: #fff URL('/assets/img/icons/alert.png') no-repeat 10px 8px;
+    min-height: 38px;
+    padding-left: 65px;
+    
+}
+
+.ui-datepicker {
+    z-index: 100 !important;
+}
+
+.form-stats-button {
+    vertical-align: middle;
+    margin: 0;
+    height: 27px;
+}
+
+#stats-form input {
+    vertical-align: middle;
+}
+
+#stats-form select {
+    font-size: 12px; 
+    font-weight: bold; 
+    height: 22px;
+    vertical-align: middle;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #95999C;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.broker-banner {
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #95999C;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#tabs {
+    border: 2px solid #95999C;
+    background-color: #fff;
+}
+
+#tabs #tabs-menu {
+    list-style: none;
+    list-style-type: none;
+}
+
+#tabs #tabs-menu  li {
+    float: left;
+    background-color: #E8EFF8;
+}
+
+.ui-tabs { position: relative; padding: .2em; zoom: 1; border: 2px solid #95999C; background-color: #fff; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; background-color: #E8EFF8; height: 33px; border-bottom: 1px solid #95999C; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .3em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; background-color: #fff; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; background-color: #336699; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color: #fff; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+.hover {
+    background-color: #FFFFE1 !important;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #FFFFE1 !important;
+    cursor: pointer;
+}
+
+#banner-container {
+    overflow: auto;
+    width: 100%;
+    height: 600px;
+}
+
+#broker-banner-container {
+    overflow: auto;
+    width: 100%;
+    height: 600px;
+}
+
+.hide {
+    display: none;
+}
+
+.step {
+    font-size: 24px;
+    font-weight: bold;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.data {
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #F2F5F8;
+    border: 2px solid #95999C;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 20px 10px 20px;
+}
+
+.shift {
+    width: 75%;
+    margin-left: 63px;
+}
+
+.data .table-header, .data .table-header2 {
+    width: 108px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.data td {
+    padding-bottom: 10px;
+}
+
+.data .table-header2 {
+    width: 165px;
+}
+
+
+.data .table-data {
+    vertical-align: middle;
+}
+
+input.stretch {
+    width: 220px;
+}
+
+select.stretch {
+    width: 225px;
+}
+
+.error {
+    margin: 0px;
+    display: inline;
+    font-size: 11px;
+}
+
+form .errors {
+    margin-left: 0px;
+    color: red;
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+}

@@ -1,0 +1,11 @@
+<h1 style="margin-bottom: 4px;">Promote Swurve</h1>
+<h4 style="font-weight: normal;">The Hottest Hook-Up Site</h4><br />
+<?= HTML::image('assets/img/affiliates/swurve.png', array('align' => 'left', 'style' => 'float: left; border: 1px solid #95999C; margin-right: 15px;')); ?>
+<h3>The Freshest Concept to Enter the Dating Space</h3>
+<p style="font-size: 12px; line-height: 15px;">We are proud to offer Swurve for your promotion, the newest and freshest concept to enter the dating market. As the hottest hook-up site for singles seeking casual relationships, Swurve provides users a unique connection building platform that is sleek, clean and easy to navigate. Optimized functionality coupled with a wide array of tantalizing, teasing yet non-explicit ad materials grants Swurve versatility to be marketable to both mainstream and adult traffic.</p>
+<p style="font-size: 12px; line-height: 15px;">We know the space and we’ve leveraged our industry knowledge to create service that feels fresh and unique; a product that appeals to both men and women, soft enough for mainstream channels but with enough edge to still hook adult surfers. We've put our product through rigorous testing; working with paid traffic and trusted partners to test ad tools and optimize traffic funnels before opening it up for affiliate promotion to ensure you have all the tools to hit the ground running. To put it simply- Swurve converts.</p>
+<p style="font-size: 12px; line-height: 15px;">We encourage webmasters to try us side by side with other existing offers and see the difference an unsaturated brand with a unique database can make for your traffic. Swurve is not a white label, spin off or feeder site of any other property. Swurve is an independent community built on our own proprietary technology developed by a team that has worked with some of the biggest names in mainstream, niche market and adult dating.</p>
+<p style="font-size: 12px; line-height: 15px;">Join the Revolution. Promote Swurve Today.</p>
+<p style="font-size: 12px; line-height: 15px;">Visit the website: <?= HTML::anchor('/', 'Swurve'); ?></p>
+<br />
+<center><?= HTML::anchor('affiliates/account/create', HTML::image('assets/img/affiliates/button-signup-today.png'), array('style' => 'background-color: #F4EBDF;')); ?></center>

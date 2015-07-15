@@ -1,0 +1,24 @@
+# First, ignore everything
+*
+
+# Now, whitelist anything that's a directory
+!*/
+
+# And all the file types you're interested in.
+!*.php
+!*.js
+!*.css
+!.gitignore
+!*.png
+!*.jpg
+
+# Ignore these directories
+/application/logs/*
+/application/cache/*
+/assets/photos/[0-9a-z]/*
+/assets/photos/-/*
+#/assets/img/attachments/*
+
+# Ignore config files
+/application/bootstrap.php
+/application/config/database.php
