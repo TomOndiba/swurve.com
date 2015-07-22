@@ -20,5 +20,5 @@
 #/assets/img/attachments/*
 
 # Ignore config files
-/application/bootstrap.php
-/application/config/database.php
+#/application/bootstrap.php
+#/application/config/database.php
