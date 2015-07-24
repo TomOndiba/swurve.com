@@ -19,6 +19,8 @@
 /assets/photos/-/*
 #/assets/img/attachments/*
 
+!.gitkeep
+
 # Ignore config files
 #/application/bootstrap.php
 #/application/config/database.php
