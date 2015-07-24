@@ -1,0 +1,7 @@
+RewriteEngine Off
+
+AuthName "Restricted Area"
+AuthType Basic
+AuthUserFile /var/www/keys/.htpasswd
+AuthGroupFile /dev/null
+require valid-user

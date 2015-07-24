@@ -1,0 +1,75 @@
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+Options -Indexes
+IndexIgnore *
+
+order allow,deny
+deny from 67.95.30.210
+allow from all
+
+# Turn on URL rewriting
+RewriteEngine On
+
+# Uncomment for maintenance / updates begin >>
+#RewriteBase /
+#RewriteCond %{REQUEST_URI} !^/maintenance\.php$
+#RewriteCond %{REQUEST_URI} !^/assets/img/emailheader\.jpg$
+#RewriteRule .* /maintenance.php [PT]
+# << end
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{HTTP_HOST} ^www.flirtbucks.net [NC]
+RewriteRule ^(.*)$ http://flirtbucks.net/$1 [R=301,L]
+
+#RewriteRule !^flirtbucks(.*)?$ - [C]
+
+RewriteCond %{HTTP_HOST} ^(www.)?flirtbucks.net$ [NC]
+#RewriteRule !^flirtbucks/ flirtbucks%{REQUEST_URI}
+#RewriteRule !^flirtbucks(.*)?$ - [S=1]
+RewriteRule !^(index|assets|flirtbucks|json|auto)(.*)?$ - [C]
+RewriteRule ^(.*)$ flirtbucks/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?swurve.net$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www.)?swurve.org [NC]
+RewriteRule ^(.*)$ http://www.swurve.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^affiliates.swurve.com$ [NC]
+RewriteRule ^(.*)$ http://www.swurve.com/affiliates/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^swurve.com$ [NC]
+RewriteRule ^(.*)$ http://www.swurve.com/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^swurve.com$ [NC]
+RewriteRule ^(.*)$ https://www.swurve.com/$1 [R=301,L]
+
+# Installation directory
+RewriteBase /
+
+# Protect hidden files from being viewed
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Protect application and system files from being viewed
+RewriteRule ^(?:application|modules|system)\b - [F,L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_URI} !=/server-status
+RewriteCond %{REQUEST_URI} !=/server-info
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT]
